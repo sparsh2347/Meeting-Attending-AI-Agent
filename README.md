@@ -145,7 +145,6 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-<<<<<<< HEAD
 ### 4. Azure OpenAI API Setup
 
 Open `streamlit_app.py` and `summarizer.py` and replace this block:
@@ -158,8 +157,7 @@ openai.api_key = "YOUR_API_KEY"
 deployment_name = "YOUR_DEPLOYMENT_NAME"
 ```
 
-<<<<<<< HEAD
-🔐 You can also load these from a `.env` file (recommended for production).
+**NOTE** :🔐 You can also load these from a `.env` file (recommended for production).
 
 ---
 ### 5. Google Calendar API Setup
