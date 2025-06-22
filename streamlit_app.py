@@ -49,9 +49,7 @@ elif mode == "Upload Audio File":
 else: # This covers the "Paste Transcript" option
     transcript_text = st.text_area("Paste your meeting transcript here", height=200)
 
-# ---
 # Process Transcript for Summary and Action Items
-# ---
 if transcript_text:
     # Button to start the analysis process
     if st.button("Generate Summary and Action Items"):
