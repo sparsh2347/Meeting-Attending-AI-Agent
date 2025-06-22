@@ -35,90 +35,12 @@ Everything is bundled into a clean, intuitive **Streamlit UI** where users can:
 - 🧾 Extract action items  
 - 📆 Schedule all tasks in one click
 
----
-
-## 🚀 Features
-
-- 🔊 Upload `.mp3` or `.wav` meeting audio for transcription via Whisper
-- 📝 Paste or upload `.txt` / `.srt` meeting transcripts directly
-- 💡 Summarize using GPT-4o (Azure OpenAI API)
-- 📌 Extract task + assignee + due date from summary
-- 📆 Schedule tasks to Google Calendar automatically
-- 🌐 Simple Streamlit UI
-
----
 
 ## 📸 Screenshots
 
-
----
-
-## 🛠️ Tech Stack
-
-| Layer         | Tool/Library                     |
-|---------------|----------------------------------|
-| UI            | Streamlit                        |
-| Audio to Text | Whisper (OpenAI)                 |
-| Summarizer    | GPT‑4o via Azure OpenAI          |
-| NLP Parsing   | GPT for structured action items  |
-| Date Parsing  | `dateparser` + GPT ISO prompts   |
-| Calendar      | Google Calendar API              |
-| Others        | Python, FFmpeg, dotenv, etc.     |
-
----
-
-## 🔧 Setup Instructions
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/meeting-agent.git
-cd meeting-agent
-```
-
-### 2. Create and Activate Virtual Environment
-# 🤖 What This Project Does  
-An end-to-end **AI-powered meeting assistant** that automates your post-meeting workflow:
-
-#### 🎙️ Automatic Speech Transcription  
-Upload `.mp3` or `.wav` audio files, and the system uses **OpenAI Whisper** to transcribe them into readable text — no manual note-taking needed.
-
-#### 🧠 Smart Summarization with GPT-4o  
-The transcript is summarized using **Azure OpenAI's GPT-4o**, producing:
-
-- 🔹 A concise abstract  
-- 🔹 Key discussion points  
-- 🔹 Early action items  
-
-Perfect for catching up without reading the entire transcript.
-
-#### ✅ Action Item Extraction (Who, What, When)  
-Using GPT-4o’s language understanding, the assistant extracts structured tasks with:
-
-- 📌 Task description  
-- 👤 Assigned person  
-- 🗓️ Deadline (converted to ISO 8601)
-
-#### 📅 Seamless Google Calendar Integration  
-Tasks are scheduled to **Google Calendar** using the API, automatically creating:
-
-- 📝 Event title & description  
-- 🕘 Start & end times  
-- 📅 Accurate due dates based on parsed natural language
-
-#### 🌐 Beautiful Web Interface (Streamlit)  
-Everything is bundled into a clean, intuitive **Streamlit UI** where users can:
-
-- 🔼 Upload audio or transcript  
-- 📄 View real-time summaries  
-- 🧾 Extract action items  
-- 📆 Schedule all tasks in one click
-
-
-## 📸 Screenshots
-
-![image](https://github.com/user-attachments/assets/4552dd44-ba97-4460-b33e-b7c0deda4afe)
-![image](https://github.com/user-attachments/assets/a4a24ca7-0462-48f7-b061-0c7c8cfb45f5)
+![image](https://github.com/user-attachments/assets/f7337ff9-0a9d-49d1-bbfb-d87415c0b243)
+![image](https://github.com/user-attachments/assets/bd185b1c-a6a0-4abf-a3e7-dc9107af3e92)
+![image](https://github.com/user-attachments/assets/cef1c805-df1e-4640-94b6-4bd9e8a3482d)
 
 ---
 
@@ -170,7 +92,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Azure OpenAI API Setup
+### ✅ 4. Azure OpenAI API Setup
 
 Open `streamlit_app.py` and `summarizer.py` and replace this block:
 
@@ -185,10 +107,7 @@ deployment_name = "YOUR_DEPLOYMENT_NAME"
 **NOTE** :🔐 You can also load these from a `.env` file (recommended for production).
 
 ---
-### 5. Google Calendar API Setup
-=======
-**NOTE**: 🔐 You can also load these from a `.env` file (recommended for production).
-
+### ✅ 5. Google Calendar API Setup
 ---
 
 #### a. Go to https://console.cloud.google.com/
@@ -224,8 +143,8 @@ deployment_name = "YOUR_DEPLOYMENT_NAME"
 └── audio/                   # (Optional) where audio files are saved
 ```
 
-**NOTE**: 🔒 Do not share `credentials.json` or `token.pickle` publicly.
-=======
+ **NOTE: **  🔒 Do not share `credentials.json` or `token.pickle` publicly.
+ 
 ---
 
 ### ▶️ Running the App
