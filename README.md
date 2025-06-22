@@ -1,12 +1,39 @@
-# 🤖 Meeting Insights & Follow-Up Automation Agent
+# 🤖 What This Project Does  
+An end-to-end **AI-powered meeting assistant** that automates your post-meeting workflow:
 
-An AI-powered Streamlit application that:
-- Transcribes meetings from audio 🎙️
-- Summarizes key discussion points 📝
-- Extracts structured action items 📌
-- Automatically schedules tasks to Google Calendar 📆
+#### 🎙️ Automatic Speech Transcription  
+Upload `.mp3` or `.wav` audio files, and the system uses **OpenAI Whisper** to transcribe them into readable text — no manual note-taking needed.
 
-Built for the MindCraft Mini-Hackathon 2025.
+#### 🧠 Smart Summarization with GPT-4o  
+The transcript is summarized using **Azure OpenAI's GPT-4o**, producing:
+
+- 🔹 A concise abstract  
+- 🔹 Key discussion points  
+- 🔹 Early action items  
+
+Perfect for catching up without reading the entire transcript.
+
+#### ✅ Action Item Extraction (Who, What, When)  
+Using GPT-4o’s language understanding, the assistant extracts structured tasks with:
+
+- 📌 Task description  
+- 👤 Assigned person  
+- 🗓️ Deadline (converted to ISO 8601)
+
+#### 📅 Seamless Google Calendar Integration  
+Tasks are scheduled to **Google Calendar** using the API, automatically creating:
+
+- 📝 Event title & description  
+- 🕘 Start & end times  
+- 📅 Accurate due dates based on parsed natural language
+
+#### 🌐 Beautiful Web Interface (Streamlit)  
+Everything is bundled into a clean, intuitive **Streamlit UI** where users can:
+
+- 🔼 Upload audio or transcript  
+- 📄 View real-time summaries  
+- 🧾 Extract action items  
+- 📆 Schedule all tasks in one click
 
 ---
 
@@ -23,8 +50,6 @@ Built for the MindCraft Mini-Hackathon 2025.
 
 ## 📸 Screenshots
 
-![image](https://github.com/user-attachments/assets/eae6cb71-872d-49b7-8688-90593c057b97) 
-![image](https://github.com/user-attachments/assets/0349cea4-c4fa-4a64-b402-fb8eaf5c18a5)
 
 ---
 
@@ -198,7 +223,7 @@ deployment_name = "YOUR_DEPLOYMENT_NAME"
 ├── requirements.txt
 └── audio/                   # (Optional) where audio files are saved
 ```
-<<<<<<< HEAD
+
 **NOTE**: 🔒 Do not share `credentials.json` or `token.pickle` publicly.
 =======
 ---
